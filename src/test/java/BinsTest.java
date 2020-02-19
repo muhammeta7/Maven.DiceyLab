@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 
-public class Bins {
+public class BinsTest {
     ArrayList<Integer> bin = new ArrayList<>();
-
-
 
 }
