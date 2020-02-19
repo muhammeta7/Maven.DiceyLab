@@ -4,7 +4,7 @@ import org.junit.Test;
 public class DiceTest {
 
     @Test
-    public void DiceTest(){
+    public void DiceTest1(){
         // Given
         Integer expected = 5;
 
@@ -16,9 +16,9 @@ public class DiceTest {
     }
 
     @Test
-    public void DiceTest(){
+    public void DiceTest2(){
         // Given
-        Integer expected = 5;
+        Integer expected = 2;
 
         // When
         Dice dice = new Dice(expected);
@@ -28,10 +28,10 @@ public class DiceTest {
     }
 
 
-    @Test
+    /*@Test
     public void tossAndSumTest(){
 
 
-    }
+    }*/
 
 }
