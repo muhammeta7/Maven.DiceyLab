@@ -32,13 +32,13 @@ public class Simulation {
             Double percentageRolled = (double) numberOfTimesRolled / (double)numberOfTosses;
 
             if (i < 10) {
-                System.out.print("  Sum Of " + i + "'s rolled  : ");
+                System.out.print("  Sum Of " + i + "'s rolled  | ");
             } else if (i < 100) {
-                System.out.print(" Sum Of " + i + "'s rolled  : ");
+                System.out.print(" Sum Of " + i + "'s rolled  | ");
             } else {
-                System.out.print("Sum Of " + i + "'s rolled  : ");
+                System.out.print("Sum Of " + i + "'s rolled  | ");
             }
-            System.out.printf("%7d  :  ", numberOfTimesRolled);
+            System.out.printf("%7d  |  ", numberOfTimesRolled);
             System.out.printf("Percentage: %.2f ", percentageRolled);
 
             for (int stars = 1; stars < (percentageRolled * 100); stars++) {
