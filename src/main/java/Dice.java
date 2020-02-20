@@ -3,12 +3,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Dice {
-    int numberOfDice;
+    Integer numberOfDice;
 
 
     private static final Logger logger = Logger.getLogger(Dice.class.getName());
 
-    public Dice(int numOfDice) {
+    public Dice(Integer numOfDice) {
         this.numberOfDice = numOfDice;
     }
 

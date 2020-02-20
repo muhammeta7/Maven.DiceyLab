@@ -15,23 +15,21 @@ public class DiceTest {
         Assert.assertEquals(dice.getNumberOfDice(), expected);
     }
 
+
     @Test
-    public void DiceTest2(){
-        // Given
-        Integer expected = 2;
-
-        // When
-        Dice dice = new Dice(expected);
-
-        // Then
-        Assert.assertEquals(dice.getNumberOfDice(), expected);
-    }
-
-
-    /*@Test
     public void tossAndSumTest(){
 
+        // Given
+        Integer numberOfDice = 2;
+        Dice newDice = new Dice(2);
+        Integer upperRange = numberOfDice * 6;
 
-    }*/
+        // When
+        Integer actual = newDice.tossAndSum();
+
+        // Then
+        Assert.assertTrue(actual >= numberOfDice && actual <= upperRange);
+
+    }
 
 }

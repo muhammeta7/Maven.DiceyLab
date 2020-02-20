@@ -1,6 +1,18 @@
-import java.util.ArrayList;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class BinsTest {
-    ArrayList<Integer> bin = new ArrayList<>();
+
+   /* @Test
+    public void BinCounterTest(){
+        // Given
+        Integer expected = 1;
+
+        // When
+        Bins bin = new Bins(expected);
+
+        // Then
+        //Assert.assertEquals(dice.getNumberOfDice(), expected);
+    }*/
 
 }
