@@ -1,29 +1,35 @@
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Bins {
 
-    HashMap<Integer, Integer> bin;
+    private static final Logger logger = Logger.getLogger(Bins.class.getName());
+    private Map<Integer, Integer> binMap = new HashMap<Integer, Integer>();
 
-    public Bins() {
-        this.bin = new HashMap<>();
+    public Bins(){
     }
 
-    public HashMap<Integer, Integer> getBin() {
-        return bin;
+    // Creating keys for values from binMin to binMax
+    public Bins(Integer minBin, Integer maxBin){
+
+        for (Integer i = minBin; i <= maxBin; i++){
+            this.binMap.put(i, 0);
+        }
+
     }
 
-    public void setBin(Integer key, Integer value) {
-        bin.put(key, value);
+    public Map<Integer, Integer> getBinMap(){
+        return this.binMap;
     }
 
-    public Integer getBin(Integer binNumber) {
-        return bin.get(binNumber);
+    public Integer getBinsValue(Integer binNumber){
+        return this.binMap.get(binNumber);
     }
 
-    public void incrementBin(Integer binNumber) {
-        Integer addBin = getBin(binNumber) + 1;
-        bin.put(binNumber, addBin);
+    public void incrementBin(Integer binNumber){
+        Integer increment = getBinsValue(binNumber) + 1;
+        this.binMap.replace(binNumber, increment);
     }
-
 }
